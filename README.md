@@ -34,7 +34,7 @@ All of these are done in Postman:
 ### Upload an Image</b>
 Send a **POST** request to **/api/images** with an image file to process it.
 - In Postman, in the Body tab, for form-data input, include the **Key** as "file" and **Value* as an uploaded file in your local machine.
-![Upload an image](Documentation/uploading_image_success.png)
+![Upload an image](Documentation/uploading_image_success.png=150x)
 
 ### Get All Processed Image Details</b>
 Send a **GET** request to **/api/images** to retrieve all images and their metadata details.
