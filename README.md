@@ -13,18 +13,39 @@ Follow the steps to set up the project on your local machine.
 
 ### Steps
 1. **Clone this repository**
+```
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 
-2. **Unstall Dependencies**
+2. **Install Dependencies**
+```
 pip install -r requirements.txt
+```
 
-3. **Start the FastAPI server**
+3. **Start the FastAPI server**</b>
+You can open the code in VSCode and run the code, or you can run the code in CMD, with the command "python3 main.py"</b>
 The API will be available at http://localhost:8000 or http://127.0.0.1:8000
 
 ##  Documentation/ API Documentation
 
 ## Example Usage
+All of these are done in Postman:
+### Upload an Image</b>
+Send a **POST** request to **/api/images** with an image file to process it.
+- In Postman, in the Body tab, for form-data input, include the **Key** as "file" and **Value* as an uploaded file in your local machine.
+![Upload an image](Documentation/uploading_image_success.png)
+
+### Get All Processed Image Details</b>
+Send a **GET** request to **/api/images** to retrieve all images and their metadata details.
+
+### Get a Specific Processed Image Details</b>
+Send a **GET** request to **/api/images/{image_id}** to retrieve that image's metadata details.
+![List one image](Documentation/listing_one_image.png)
+
+### Get Thumbnails
+Send a **GET** request to **/api/images/{image_id}/thumbnails/{size} to retrieve a thumbnail (small or medium).
+![Get thumbnail](Documentation/get_thumbnail.png)
 
 ## References:
 - https://huggingface.co/Salesforce/blip-image-captioning-base
