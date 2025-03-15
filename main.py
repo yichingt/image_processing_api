@@ -98,7 +98,7 @@ async def upload_image(file: UploadFile = File(...)):
             "image_id": image_id,
             "original_name": file.filename,
             "processed_at": datetime.utcnow().isoformat() + "Z",
-            "time_taken": time.time() - start_time,
+            "time_taken": round((time.time() - start_time), 2),
             "metadata": get_metadata,
             "thumbnails": get_thumbnails,
             "caption": caption_text
