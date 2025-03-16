@@ -1,5 +1,54 @@
+# Table of Content
+- [Processing Pipeline Documentation](#processing-pipeline-documentation)
+- [API Documentation](#api-documentation)
+
+# Processing Pipeline Documentation
+This section describes the workflow of the Image Processing Pipeline API, from uploading the image to the final response generated.
+<img src="./upload_file_process_workflow.png" alt="uploading image success" width="600"/>
+
+## 1. Uploading an Image
+- User uploads an image file (JPG or PNG) via the POST /api/images
+- The API will receive the file and first validate its format.
+### 1.1 Validation
+- The API will check if the uploaded file is in a valid file format (i.e. JPG or PNG)
+- If the file is valid, it will continue forward. If the file is invalid, it will return 415 status code for `Unsupported Media Type`.
+
+## 2. Processing, Genrating ID and Retriving Metadata
+</b>If the image is valid, the API will process the following steps:
+
+1. Generate a Unique ID using UUID: A unique ID will be generated for the image
+
+2. Extract required metadata:
+- The API will extract the followiing metadata from the image:
+  - Dimensions
+  - File Format
+  - File Size
+  - Creation Date
+  - Modified Date
+  
+3. Generate thumbnails:
+- The API will generate 2 thumbnails for the image:
+  - Small (128,128)
+  - Medium (512, 512)
+- The thumbnails will then be saved locally, and their URLs are included in the JSON response
+
+4. Generate Captions:
+The API will use a pre-trained AI model (Blip Image Captioning) to generate a caption for the image
+
+5. Storing the Results:
+The output results will be stored in the memory, where each results are associated with the unique ID.
+
+6. Return Response:
+The API will return a JSON response containing the following:
+- Unique Image ID
+- File's Original Name
+- Processing time taken
+- Extracted metadata
+- Thumbnails' URLs
+- AI-generated caption
+
 # API Documentation
-This documentation here provides a detailed information about the available API endpoints, and their usage:
+This section here provides a detailed information about the available API endpoints, and their usage:
 - [Base URL](#base-url)
 - [Uploading an Image](#1-uploading-an-image)
 - [List All Processed Images](#2-list-all-processed-images)

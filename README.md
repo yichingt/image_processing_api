@@ -25,6 +25,7 @@ The **Image Processing Pipeline API** is a FastAPI-based application that automa
 ### Process Flow
 The flowchart below represents what happens when a file is uploaded using the API
 ![Process Flowchart](Documentation/upload_file_process_workflow.png)
+Do refer to [here](./Documentation/README.md) for the processing pipeline documentation.
 
 ### API Endpoints
 Do refer to this [section](#api-documentation) for the API endpoints documentation.
@@ -45,10 +46,6 @@ Follow the steps to set up the project on your local machine.
 - [Postman](https://www.postman.com/downloads/)
 
 ### Steps
-<p>
-<details>
-<summary>Details:</summary>
-
 1. **Clone this repository**
 ```
 git clone https://github.com/your-username/your-repo-name.git
@@ -71,7 +68,6 @@ python3 main.py
 Run with Debugger, choosing the options Python > FastAPI. 
 ```
 🠪 The API will be available at http://localhost:8000 or http://127.0.0.1:8000
-</details></p>
 
 ##  API Documentation
 To view the API documentation, see [here](./Documentation/README.md) under Documentations folder.
