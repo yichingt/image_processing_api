@@ -21,7 +21,7 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
 - **Success Response**:
   - **Code**: `200 OK`
   - **Returned Content**: JSON Response
-  - <p><details><summary>Example Response</summary>
+  - <details><summary>Example Response</summary>
   ```json
   {
     "image_status": "success",
@@ -47,7 +47,7 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
     "error": null
     }
   ```
-  </details></p>
+  </details>
 - **Error Response**:
   - **Code**: `415 Unsupported Media Type`
   - **Returned Content**: JSON Response
