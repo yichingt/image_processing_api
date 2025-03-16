@@ -2,15 +2,15 @@
 This project is a FastAPI-based image processing pipeline API that automatically processes images, generates thumbnails, extracts  metadata, and provides analysis through API endpoints.
 
 ## Table of Contents
-1. [Project Overview/Structure](#project-overviewstructure)
+- [Project Overview/Structure](#project-overviewstructure)
   - [Key Features](#key-features)
   - [Process Flow](#process-flow)
-2. [Installation Steps](#installation-steps)
+- [Installation Steps](#installation-steps)
   - [Pre-requisites](#pre-requisites)
   - [Steps](#steps)
-3. [API Documentation](#api-documentation)
-4. [Example Usage](#example-usage)
-5. [Future Works](#future-works)
+- [API Documentation](#api-documentation)
+- [Example Usage](#example-usage)
+- [Future Works](#future-works)
 
 ## Project Overview/Structure
 The **Image Processing Pipeline API** is a FastAPI-based application that automates the processing of uploaded images. It generates thumbnails, extracts metadata, and uses AI to caption images. The processed results are made available through RESTful API endpoints.
@@ -45,9 +45,10 @@ Follow the steps to set up the project on your local machine.
 - [Postman](https://www.postman.com/downloads/)
 
 ### Steps
+<p>
 <details>
 <summary>Details:</summary>
-<p>
+
 1. **Clone this repository**
 ```
 git clone https://github.com/your-username/your-repo-name.git
@@ -70,8 +71,7 @@ python3 main.py
 Run with Debugger, choosing the options Python > FastAPI. 
 ```
 🠪 The API will be available at http://localhost:8000 or http://127.0.0.1:8000
-</p>
-</details>
+</details></p>
 
 ##  API Documentation
 To view the API documentation, see [here](./Documentation/README.md) under Documentations folder.

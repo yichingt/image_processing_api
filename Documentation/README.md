@@ -12,7 +12,7 @@ This documentation here provides a detailed information about the available API 
 All API endpoinits are relative to the base URL: `http://127.0.0.1:8000`
 
 ### 1. Uploading an Image
-Uploads an image for processing. The workflow can be seen from [here](#process-flow). The API will generate thumbnails, extract metadata, and generate a caption.
+Uploads an image for processing. The workflow can be seen from [here](#process-flow). The API will generate thumbnails, extract metadata, and generate a caption. The caption actually uses AI (Blip Image Captioning) to generate them.
 - **URL**: `/api/images`
 - **Method**: `POST`
 - **Request Body**:
