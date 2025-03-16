@@ -21,7 +21,8 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
 - **Success Response**:
   - **Code**: `200 OK`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>```json
+  - <p><details><summary>Example Response</summary>
+  ```json
   {
     "image_status": "success",
     "data": {
@@ -46,18 +47,18 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
     "error": null
     }
   ```
-  </p></details>
+  </details></p>
 - **Error Response**:
   - **Code**: `415 Unsupported Media Type`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>
+  - <p><details><summary>Example Response</summary>
   ```json
   {
     "current_status": "failure",
     "error": "Unsupported image file. Only accepts JPG or PNG files. Please try again."
     }
   ```
-    </p></details>
+    </details></p>
 - **Error Response**:
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
@@ -72,23 +73,25 @@ Retrieve a list of all processed images.
 - **Success Response - There are processed images in memory**:
   - **Code**: `200 OK`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>```json
+  - <p><details><summary>Example Response</summary>
+  ```json
   {
     "current_status": "success",
     "data": "No image has been processed yet.",
     "error": null
     }
   ```
-  </p></details>
+  </details></p>
 - **Error Response**:
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>  ```json
+  - <p><details><summary>Example Response</summary>
+  ```json
     {
     "detail": "There was an error parsing the body"
     }
   ```
-    </p></details>
+    </details></p>
 
 ### 3. Get An Image Details
 Retrieve details of a specific image, including metadata, thumbnails, and caption.

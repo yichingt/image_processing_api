@@ -130,3 +130,6 @@ Send a **GET** request to **/api/images/{image_id}/thumbnails/{size} to retrieve
 - List of HTTP status codes: [https://en.wikipedia.org/wiki/List_of_HTTP_status_codes]
 - UUID Documentation: [https://docs.python.org/3/library/uuid.html]
 - Getting file's creation and modification dates: [https://docs.vultr.com/python/examples/get-file-creation-and-modification-date]
+- [AI](https://chatgpt.com/) used to resolve following errors:
+  - time format for when the image is processed at (eg. "processed_at": "2024-03-10T10:00:00Z")
+  - resolve errors in running uvicorn
