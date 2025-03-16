@@ -133,3 +133,4 @@ Send a **GET** request to **/api/images/{image_id}/thumbnails/{size} to retrieve
 - [AI](https://chatgpt.com/) used to resolve following errors:
   - time format for when the image is processed at (eg. "processed_at": "2024-03-10T10:00:00Z")
   - resolve errors in running uvicorn
+  - resolve deprecated usage of time format (see test case readme)

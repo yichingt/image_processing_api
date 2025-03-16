@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from PIL import Image
 import io, os, uuid, time
-from datetime import datetime
+from datetime import datetime, UTC
 import uvicorn
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
@@ -97,7 +97,7 @@ async def upload_image(file: UploadFile = File(...)):
         "data": {
             "image_id": image_id,
             "original_name": file.filename,
-            "processed_at": datetime.utcnow().isoformat() + "Z",
+            "processed_at": datetime.now(UTC).isoformat(),
             "time_taken": round((time.time() - start_time), 2),
             "metadata": get_metadata,
             "thumbnails": get_thumbnails,

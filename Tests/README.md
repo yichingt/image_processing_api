@@ -28,16 +28,11 @@ collected 3 items
 
 test_main.py ...                                                                                                 [100%]
 
-================================================== warnings summary ===================================================
-test_main.py::test_upload_image
-test_main.py::test_generate_caption
-  D:\github_projects\image_processing_api\main.py:100: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-    "processed_at": datetime.utcnow().isoformat() + "Z",
-
--- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-=========================================== 3 passed, 2 warnings in 10.49s ============================================
+================================================== 3 passed in 9.83s ==================================================
 ```
 
 ## References:
 - Assert usage [ttps://realpython.com/python-assert-statement/]
-- [AI](https://chatgpt.com/) used to resolve error of adding absolute path to import FastAPI (app) 
+- [AI](https://chatgpt.com/) used to:
+  - resolve error of adding absolute path to import FastAPI (app),
+  - deprecated "datetime.utcnow().isoformat() + "Z"" error, which is resolved and code line replaced in main.py
