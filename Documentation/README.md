@@ -23,7 +23,7 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
   - **Returned Content**: JSON Response
   - **Example Response**:
   <details><summary>Click to expand</summary>
-  ```json
+    ```json
   {
   "image_status": "success",
   "data": {
