@@ -1,10 +1,17 @@
 # API Documentation
 This documentation here provides a detailed information about the available API endpoints, and their usage:
+- [Base URL](#base-url)
+- [Uploading an Image](#1-uploading-an-image)
+- [List All Processed Images](#2-list-all-processed-images)
+- [Get An Image Details](#3-get-an-image-details)
+- [Get Thumbnail](#4-get-thumbnail)
+- [Get Processing Statisitcs](#5-get-processing-statistics)
+- [Error Handling](#error-handling)
 
 ### Base URL
 All API endpoinits are relative to the base URL: `http://127.0.0.1:8000`
 
-#### 1. Uploading an Image
+### 1. Uploading an Image
 Uploads an image for processing. The workflow can be seen from [here](#process-flow). The API will generate thumbnails, extract metadata, and generate a caption.
 - **URL**: `/api/images`
 - **Method**: `POST`
@@ -14,8 +21,7 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
 - **Success Response**:
   - **Code**: `200 OK`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>
-  ```json
+  - <details><summary>Example Response</summary><p>```json
   {
     "image_status": "success",
     "data": {
@@ -56,7 +62,7 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
 
-#### 2. List All Processed Images
+### 2. List All Processed Images
 Retrieve a list of all processed images.
 - **URL**: `/api/images`
 - **Method**: `GET`
@@ -66,8 +72,7 @@ Retrieve a list of all processed images.
 - **Success Response - There are processed images in memory**:
   - **Code**: `200 OK`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>
-  ```json
+  - <details><summary>Example Response</summary><p>```json
   {
     "current_status": "success",
     "data": "No image has been processed yet.",
@@ -78,15 +83,14 @@ Retrieve a list of all processed images.
 - **Error Response**:
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
-  - <details><summary>Example Response</summary><p>
-  ```json
+  - <details><summary>Example Response</summary><p>  ```json
     {
     "detail": "There was an error parsing the body"
     }
   ```
     </p></details>
 
-#### 3. Get An Image Details
+### 3. Get An Image Details
 Retrieve details of a specific image, including metadata, thumbnails, and caption.
 - **URL**: `/api/images/{image_id}`
 - **Method**: `GET`
@@ -100,7 +104,7 @@ Retrieve details of a specific image, including metadata, thumbnails, and captio
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
 
-#### 4. Get Thumbnail
+### 4. Get Thumbnail
 Retrieve a specific image thumbnail (small/medium).
 - **URL**: `/api/images/{image_id}/thumbnails{small,medium}`
 - **Method**: `GET`
@@ -117,7 +121,7 @@ Retrieve a specific image thumbnail (small/medium).
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
 
-#### 5. Get Processing Statistics
+### 5. Get Processing Statistics
 Retrieve the statistics about the processed image(s), including the number of success and failure, and average processing time.
 - **URL**: `/api/stats`
 - **Method**: `GET`
@@ -128,7 +132,7 @@ Retrieve the statistics about the processed image(s), including the number of su
   - **Code**: `400 Bad Request`
   - **Returned Content**: JSON Response
 
-#### Error Handling
+### Error Handling
 All error handling follows the same format:
 ```json
 {
