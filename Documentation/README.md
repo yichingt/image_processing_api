@@ -75,26 +75,26 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
   {
     "image_status": "success",
     "data": {
-        "image_id": "b64fb0eb-7c37-40b3-adf3-ccb55f318fcf",
-        "original_name": "avatars-2rWaxLivc6z0STYK-pHrMBA-t500x500.jpg",
-        "processed_at": "2025-03-16T04:24:18.138216Z",
-        "time_taken": 4.56,
+        "image_id": "b480bcff-7fff-45b2-93cf-7a534fe39821",
+        "original_name": "hehhhh.jpg",
+        "processed_at": "2025-03-16T07:09:30.826114+00:00",
+        "time_taken": 3.21,
         "metadata": {
-            "width": 500,
-            "height": 500,
+            "width": 261,
+            "height": 216,
             "format": "JPEG",
-            "size_bytes": 51890,
-            "created_at": "2025-03-16 12:24:13",
-            "modified_at": "2025-03-16 12:24:13"
+            "size_bytes": 13962,
+            "created_at": "2025-03-16 15:09:27",
+            "modified_at": "2025-03-16 15:09:27"
         },
         "thumbnails": {
-            "small": "http://localhost:8000/api/images/b64fb0eb-7c37-40b3-adf3-ccb55f318fcf/thumbnails/small",
-            "medium": "http://localhost:8000/api/images/b64fb0eb-7c37-40b3-adf3-ccb55f318fcf/thumbnails/medium"
+            "small": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/small",
+            "medium": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/medium"
         },
-        "caption": "a girl with long hair and a red scarf"
+        "caption": "a cartoon picture of two people standing in front of a city"
     },
     "error": null
-    }
+  }
     ```
 - **Error Response**:
   - **Code**: `415 Unsupported Media Type`
@@ -122,54 +122,54 @@ Retrieve a list of all processed images.
   {
     "current_status": "success",
     "content": {
-        "b64fb0eb-7c37-40b3-adf3-ccb55f318fcf": {
+        "b480bcff-7fff-45b2-93cf-7a534fe39821": {
             "image_status": "success",
             "data": {
-                "image_id": "b64fb0eb-7c37-40b3-adf3-ccb55f318fcf",
-                "original_name": "avatars-2rWaxLivc6z0STYK-pHrMBA-t500x500.jpg",
-                "processed_at": "2025-03-16T04:24:18.138216Z",
-                "time_taken": 4.56,
-                "metadata": {
-                    "width": 500,
-                    "height": 500,
-                    "format": "JPEG",
-                    "size_bytes": 51890,
-                    "created_at": "2025-03-16 12:24:13",
-                    "modified_at": "2025-03-16 12:24:13"
-                },
-                "thumbnails": {
-                    "small": "http://localhost:8000/api/images/b64fb0eb-7c37-40b3-adf3-ccb55f318fcf/thumbnails/small",
-                    "medium": "http://localhost:8000/api/images/b64fb0eb-7c37-40b3-adf3-ccb55f318fcf/thumbnails/medium"
-                },
-                "caption": "a girl with long hair and a red scarf"
-            },
-            "error": null
-        },
-        "60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb": {
-            "image_status": "success",
-            "data": {
-                "image_id": "60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb",
+                "image_id": "b480bcff-7fff-45b2-93cf-7a534fe39821",
                 "original_name": "hehhhh.jpg",
-                "processed_at": "2025-03-16T04:27:43.924568Z",
-                "time_taken": 2.42,
+                "processed_at": "2025-03-16T07:09:30.826114+00:00",
+                "time_taken": 3.21,
                 "metadata": {
                     "width": 261,
                     "height": 216,
                     "format": "JPEG",
                     "size_bytes": 13962,
-                    "created_at": "2025-03-16 12:27:41",
-                    "modified_at": "2025-03-16 12:27:41"
+                    "created_at": "2025-03-16 15:09:27",
+                    "modified_at": "2025-03-16 15:09:27"
                 },
                 "thumbnails": {
-                    "small": "http://localhost:8000/api/images/60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb/thumbnails/small",
-                    "medium": "http://localhost:8000/api/images/60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb/thumbnails/medium"
+                    "small": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/small",
+                    "medium": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/medium"
                 },
                 "caption": "a cartoon picture of two people standing in front of a city"
             },
             "error": null
+        },
+        "f9fb3888-66f6-4dfb-a7dd-63b286f19292": {
+            "image_status": "success",
+            "data": {
+                "image_id": "f9fb3888-66f6-4dfb-a7dd-63b286f19292",
+                "original_name": "holdhands.JPG",
+                "processed_at": "2025-03-16T07:11:14.231146+00:00",
+                "time_taken": 1.45,
+                "metadata": {
+                    "width": 505,
+                    "height": 488,
+                    "format": "JPEG",
+                    "size_bytes": 60953,
+                    "created_at": "2025-03-16 15:11:12",
+                    "modified_at": "2025-03-16 15:11:12"
+                },
+                "thumbnails": {
+                    "small": "http://localhost:8000/api/images/f9fb3888-66f6-4dfb-a7dd-63b286f19292/thumbnails/small",
+                    "medium": "http://localhost:8000/api/images/f9fb3888-66f6-4dfb-a7dd-63b286f19292/thumbnails/medium"
+                },
+                "caption": "two hands reaching each other hand"
+            },
+            "error": null
         }
     }
-    }
+  }
   ```
 - **Success Response - No images processed yet**:
   - **Code**: `200 OK`
@@ -206,27 +206,27 @@ Retrieve details of a specific image, including metadata, thumbnails, and captio
     "data": {
         "image_status": "success",
         "data": {
-            "image_id": "60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb",
+            "image_id": "b480bcff-7fff-45b2-93cf-7a534fe39821",
             "original_name": "hehhhh.jpg",
-            "processed_at": "2025-03-16T04:27:43.924568Z",
-            "time_taken": 2.42,
+            "processed_at": "2025-03-16T07:09:30.826114+00:00",
+            "time_taken": 3.21,
             "metadata": {
                 "width": 261,
                 "height": 216,
                 "format": "JPEG",
                 "size_bytes": 13962,
-                "created_at": "2025-03-16 12:27:41",
-                "modified_at": "2025-03-16 12:27:41"
+                "created_at": "2025-03-16 15:09:27",
+                "modified_at": "2025-03-16 15:09:27"
             },
             "thumbnails": {
-                "small": "http://localhost:8000/api/images/60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb/thumbnails/small",
-                "medium": "http://localhost:8000/api/images/60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb/thumbnails/medium"
+                "small": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/small",
+                "medium": "http://localhost:8000/api/images/b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/medium"
             },
             "caption": "a cartoon picture of two people standing in front of a city"
         },
         "error": null
     }
-    }
+  }
     ```
 - **Error Response - Specified image does not exist**:
   - **Code**: `404 Not Found`
@@ -254,8 +254,8 @@ Retrieve a specific image thumbnail (small/medium).
   ```json
   {
     "current_status": "success",
-    "data": "60f42fc8-d4ba-4dc9-9137-ab61c7a03cdb/thumbnails/small.jpg"
-    }
+    "data": "b480bcff-7fff-45b2-93cf-7a534fe39821/thumbnails/small.jpg"
+  }
   ```
 - **Error Response - User input for size not small or medium**:
   - **Code**: `400 Bad Request`
@@ -295,10 +295,10 @@ Retrieve the statistics about the processed image(s), including the number of su
     "data": {
         "success": 2,
         "failure": 0,
-        "total_processing_time": 6.98041296005249,
-        "avg_processing_time": 3.490206480026245
+        "total_processing_time": 4.662299156188965,
+        "avg_processing_time": 2.3311495780944824
     }
-    }
+  }
   ```
 - **Error Response**:
   - **Code**: `400 Bad Request`
