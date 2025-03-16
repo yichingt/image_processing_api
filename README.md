@@ -3,11 +3,11 @@ This project is a FastAPI-based image processing pipeline API that automatically
 
 ## Table of Contents
 1. [Project Overview/Structure](#project-overviewstructure)
-- [Key Features](#key-features)
-- [Process Flow](#process-flow)
+  - [Key Features](#key-features)
+  - [Process Flow](#process-flow)
 2. [Installation Steps](#installation-steps)
-- [Pre-requisites](#pre-requisites)
-- [Steps](#steps)
+  - [Pre-requisites](#pre-requisites)
+  - [Steps](#steps)
 3. [API Documentation](#api-documentation)
 4. [Example Usage](#example-usage)
 5. [Future Works](#future-works)
@@ -74,18 +74,7 @@ Run with Debugger, choosing the options Python > FastAPI.
 </details>
 
 ##  API Documentation
-The core components of this image processing API endpoints are as documented here:
-
-### POST /api/images
-This API uploads an image for processing, following the 
-
-### GET /api/images
-
-### GET /api/images/{image_id}
-
-### GET /api/images/{image_id}/thumbnails{small,medium}
-
-### GET /api/stats
+To view the API documentation, see [here](./Documentation/README.md) under Documentations folder.
 
 ## Example Usage
 All of these are done in Postman in this section:

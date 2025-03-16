@@ -76,7 +76,7 @@ async def upload_image(file: UploadFile = File(...)):
     # Limit file upload to JPG and PNG
     if load_image.format.upper() not in ["JPEG", "PNG"]:
       os.remove(file_path)  # Clean up temporary file
-      return JSONResponse(content={"status": "failure", "error": "Unsupported image file. Only accepts JPG or PNG files. Please try again."}, status_code=415)
+      return JSONResponse(content={"current_status": "failure", "error": "Unsupported image file. Only accepts JPG or PNG files. Please try again."}, status_code=415)
 
     # Unique ID for image, using UUID
     image_id = str(uuid.uuid4())
@@ -120,7 +120,7 @@ async def upload_image(file: UploadFile = File(...)):
     #raise HTTPException(status_code=400, detail="Something went wrong. Please try again.")
     # Update stats + flag
     processed_results_stats["failure"] += 1
-    return JSONResponse(content={"status": "failure", "error": "Something went wrong. Please try again."}, status_code=400)
+    return JSONResponse(content={"current_status": "failure", "error": "Something went wrong. Please try again."}, status_code=400)
     #return JSONResponse(content={"status": "failure", "error": str(e)}, status_code=400)
 
 
