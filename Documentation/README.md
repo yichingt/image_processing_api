@@ -24,28 +24,28 @@ Uploads an image for processing. The workflow can be seen from [here](#process-f
   - <details><summary>Example Response</summary>
   ```json
   {
-    "image_status": "success",
-    "data": {
-        "image_id": "15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87",
-        "original_name": "dark.jpg",
-        "processed_at": "2025-03-16T03:58:35.311830Z",
-        "time_taken": 5.69,
-        "metadata": {
-            "width": 626,
-            "height": 417,
-            "format": "JPEG",
-            "size_bytes": 25932,
-            "created_at": "2025-03-16 11:58:29",
-            "modified_at": "2025-03-16 11:58:29"
-        },
-        "thumbnails": {
-            "small": "http://localhost:8000/api/images/15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87/thumbnails/small",
-            "medium": "http://localhost:8000/api/images/15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87/thumbnails/medium"
-        },
-        "caption": "a dark background with a yellow light"
+  "image_status": "success",
+  "data": {
+    "image_id": "15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87",
+    "original_name": "dark.jpg",
+    "processed_at": "2025-03-16T03:58:35.311830Z",
+    "time_taken": 5.69,
+    "metadata": {
+        "width": 626,
+        "height": 417,
+        "format": "JPEG",
+        "size_bytes": 25932,
+        "created_at": "2025-03-16 11:58:29",
+        "modified_at": "2025-03-16 11:58:29"
     },
-    "error": null
-    }
+    "thumbnails": {
+        "small": "http://localhost:8000/api/images/15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87/thumbnails/small",
+        "medium": "http://localhost:8000/api/images/15ea78c8-24eb-4ea4-92a2-87b1f0aa7b87/thumbnails/medium"
+    },
+    "caption": "a dark background with a yellow light"
+  },
+  "error": null
+  }
   ```
   </details>
 - **Error Response**:
