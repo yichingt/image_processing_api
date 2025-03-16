@@ -1,5 +1,5 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi import FastAPI, File, UploadFile
+from fastapi.responses import JSONResponse
 from PIL import Image
 import io, os, uuid, time
 from datetime import datetime
@@ -30,7 +30,7 @@ def extract_metadata(image, file_path):
 
 def generate_thumbnails(image, image_id: str, file_extension: str):
   # Generate thumbnails (2 different sizes) 
-  # example given: "small": "http://localhost:8000/api/images/img123/thumbnails/small" and "medium": "http://localhost:8000/api/images/img123/thumbnails/medium"
+  # example: "small": "http://localhost:8000/api/images/img123/thumbnails/small" and "medium": "http://localhost:8000/api/images/img123/thumbnails/medium"
   
   thumbnails = {}
   #small_tn = image.resize((128, 128))
